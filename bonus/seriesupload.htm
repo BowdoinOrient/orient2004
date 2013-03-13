@@ -1,0 +1,56 @@
+<?php
+
+# Connect to DB.
+mysql_connect("teddy","orientdba","0r1en!") or die(mysql_error() );
+mysql_select_db ("DB01Orient");
+
+
+?>
+<HTML>
+<HEAD>
+<TITLE>BONUS</TITLE>
+<link href="orient.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY>
+<p><a href="index.php"><img src="logo.jpg" border="0"></a></p>
+
+<table bgcolor="CCCCCC" cellpadding="1" width="100%"><tr><td>
+<font class="textbold">&nbsp;Add a series</font><tr><td></table>
+
+<FORM method="POST" action="seriesform.php">
+  <table rows=2 cols=2 cellspacing=0 cellpadding=5>
+    <tr> 
+      <td valign="top"> <table cols=2 cellspacing=0 cellpadding=2>
+          <tr> 
+            <td>Name: </td>
+            <td> <INPUT type="text" name="series" size="60"> </td>
+          </tr>
+          <tr> 
+            <td>Logo URL (optional): </td>
+            <td> <INPUT type="text" name="code" size="60"> </td>
+          </tr>
+        </table>
+        <p> 
+          <input type="submit" name="preview" value="Add Series">
+        </p></td>
+      <td valign="top">&nbsp;&nbsp;&nbsp; </td>
+      <td valign="top"><font class="textbold">Existing Series:</font> 
+        <?php
+	  $query = "select name from series order by name";
+	  $res = mysql_query ($query);
+	  while ($row = mysql_fetch_array($res)) {
+			$seriesName = $row["name"];
+		?>
+        <?php echo $seriesName ?><br> 
+        <?php
+}
+?>
+      </td>
+    </tr>
+    <tr> 
+      <td colspan = 3>&nbsp; </td>
+    </tr>
+  </table>
+</FORM>
+</BODY>
+</HTML>

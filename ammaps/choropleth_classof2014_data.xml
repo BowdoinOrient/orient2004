@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map map_file="usa.swf" zoom="95%" zoom_x="3%" zoom_y="7%"> 
+  <areas> 
+    <area mc_name="AL" title="Alabama" value="0"></area> 
+    <area mc_name="AK" title="Alaska" value="2"></area> 
+    <area mc_name="AZ" title="Arizona" value="2"></area> 
+    <area mc_name="AR" title="Arkansas" value="1"></area> 
+    <area mc_name="CA" title="California" value="37"></area> 
+    <area mc_name="CO" title="Colorado" value="7"></area> 
+    <area mc_name="CT" title="Connecticut" value="41"></area> 
+    <area mc_name="DE" title="Delaware" value="1"></area> 
+    <area mc_name="DC" title="District of Columbia" value="4"></area> 
+    <area mc_name="FL" title="Florida" value="14"></area> 
+    <area mc_name="GA" title="Georgia" value="5"></area> 
+    <area mc_name="HI" title="Hawaii" value="0"></area> 
+    <area mc_name="ID" title="Idaho" value="0"></area> 
+    <area mc_name="IL" title="Illinois" value="10"></area> 
+    <area mc_name="IN" title="Indiana" value="2"></area> 
+    <area mc_name="IA" title="Iowa" value="4"></area> 
+    <area mc_name="KS" title="Kansas" value="4"></area> 
+    <area mc_name="KY" title="Kentucky" value="0"></area> 
+    <area mc_name="LA" title="Louisiana" value="2"></area> 
+    <area mc_name="ME" title="Maine" value="55"></area> 
+    <area mc_name="MD" title="Maryland" value="9"></area> 
+    <area mc_name="MA" title="Massachusetts" value="86"></area> 
+    <area mc_name="MI" title="Michigan" value="4"></area> 
+    <area mc_name="MN" title="Minnesota" value="10"></area> 
+    <area mc_name="MS" title="Mississippi" value="0"></area> 
+    <area mc_name="MO" title="Missouri" value="3"></area> 
+    <area mc_name="MT" title="Montana" value="2"></area> 
+    <area mc_name="NE" title="Nebraska" value="0"></area> 
+    <area mc_name="NV" title="Nevada" value="1"></area> 
+    <area mc_name="NH" title="New Hampshire" value="11"></area> 
+    <area mc_name="NJ" title="New Jersey" value="33"></area> 
+    <area mc_name="NM" title="New Mexico" value="1"></area> 
+    <area mc_name="NY" title="New York" value="59"></area> 
+    <area mc_name="NC" title="North Carolina" value="8"></area> 
+    <area mc_name="ND" title="North Dakota" value="0"></area> 
+    <area mc_name="OH" title="Ohio" value="5"></area> 
+    <area mc_name="OK" title="Oklahoma" value="1"></area> 
+    <area mc_name="OR" title="Oregon" value="4"></area> 
+    <area mc_name="PA" title="Pennsylvania" value="11"></area> 
+    <area mc_name="RI" title="Rhode Island" value="1"></area> 
+    <area mc_name="SC" title="South Carolina" value="0"></area> 
+    <area mc_name="SD" title="South Dakota" value="0"></area> 
+    <area mc_name="TN" title="Tennessee" value="2"></area> 
+    <area mc_name="TX" title="Texas" value="14"></area> 
+    <area mc_name="UT" title="Utah" value="0"></area> 
+    <area mc_name="VT" title="Vermont" value="4"></area> 
+    <area mc_name="VA" title="Virginia" value="8"></area> 
+    <area mc_name="WA" title="Washington" value="8"></area> 
+    <area mc_name="WV" title="West Virginia" value="0"></area> 
+    <area mc_name="WI" title="Wisconsin" value="6"></area> 
+    <area mc_name="WY" title="Wyoming" value="1"></area> 
+  </areas> 
+   
+  <labels> 
+    <label x="!270" y="!60" text_size="18" color="#000000" remain="false"> 
+      <text>Class of 2014 students by state</text> 
+    </label> 
+	<label x="!270" y="!34" text_size="10" color="#000000" remain="false"> 
+      <text>Data source: Bowdoin College Admissions</text> 
+    </label> 
+	<label x="!270" y="!20" text_size="10" color="#000000" remain="false"> 
+      <text>Graphic: Orient Express</text> 
+    </label> 
+  </labels> 
+</map> 

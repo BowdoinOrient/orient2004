@@ -1,0 +1,441 @@
+/*
+//
+//
+// TEMPLATE
+//
+//
+*/
+
+/* 
+// TEMPLATE STRUCTURE
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: minion-pro,Georgia;
+	color: #333;
+}
+
+#mainhead {
+	position:fixed;
+	top: 0;
+	height: 45px;
+	width: 100%;
+	z-index: 99;
+	background: white;
+}
+
+#head-content {
+	width: 95%;
+	margin: auto;
+	height: 45px;
+	border-bottom: solid 2px gray;
+}
+
+#issuedate{
+	position: absolute; 
+	margin: 12px 0 0 390px;
+	font-family: minion-pro,Garamond;
+}
+
+#issue-viewselect{
+	position: absolute; 
+	height: 32px;
+	margin: 6px 0 0 280px;
+	opacity: 0.3;
+}
+
+#issue-viewselect:hover{
+	opacity: 1;
+	box-shadow: 0 0 5px gray;
+	-webkit-transition: all .1s ease-in;
+}
+
+#content {
+	width: 92%;
+	margin: auto;
+	padding: 0 10px;
+}
+
+#content-scribd {
+	width: 95%;
+	height: 90%;
+	margin: auto;
+	margin-top: 45px;
+	padding: 0;
+}
+
+nav ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	height:45px;
+	float: right;
+}
+
+nav ul li {
+	display: block;
+	list-style: none;
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	height:25px;
+	padding: 15px 10px 5px 10px;
+	font-family: minion-pro,Garamond;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: black;
+}
+
+nav ul li:hover {
+	background: lightgray;
+}
+
+nav ul li a:hover {
+	color: darkblue;
+	text-decoration: none;
+}
+
+nav input {
+	width: 100px;
+	height: 19px;
+	margin: 10px;
+	display: block;
+	font-family: minion-pro,Garamond;
+}
+
+footer {
+	padding: 25px 0;
+	clear: both;
+	text-align: right;
+}
+
+/* 
+// TEMPLATE ELEMENTS 
+*/
+
+p {
+	font-family: minion-pro,Georgia;
+	font-size: 15px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0 0 18px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	margin: 0;
+	display: inline;
+	float: left;
+	font-size: 36px;
+	font-family: minion-pro,Garamond;
+	font-variant: small-caps;
+}
+
+h1 a {
+	color: #000;
+	display: block;
+	height: 43px;
+	padding: 2px 0 0 10px;
+	position: absolute;
+	margin: auto;
+	
+} 
+
+h1 a:hover {
+	text-decoration: none;
+	text-shadow: 0 0 10px gray;
+	-webkit-transition: all .2s ease-in;
+}
+
+h2 {
+	font-family: minion-pro,Georgia;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 65px;
+	clear: both;
+}
+
+.series {
+	font-family:myriad-pro-condensed,helvetica,arial;
+	font-weight:bold;
+	font-size: 70%;
+	text-transform: uppercase;
+}
+
+#wordmark .super {
+	position: absolute;
+	bottom: 21px;
+	left: 33px;
+	font-size: 14px;
+}
+
+.smallcaps {
+	font-variant: small-caps;
+}
+
+.clear {
+	clear: both;
+}
+
+hr {
+	clear: both;
+	width: 1px;
+	background: lightgray;
+	border: 0;
+}
+
+/*
+//
+//
+// HOME PAGE
+//
+//
+*/
+
+section {
+	/* clear: both; */
+	float: left;
+}
+
+section h2 {
+	margin: 0 0 25px 0;
+	font-variant: small-caps;
+	font-weight: bold;
+	border-bottom: solid 1px lightgray;
+}
+
+.articleblock {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.articleblock li {
+	display: block;
+	list-style: none;
+	float: left;
+	height: 125px;
+	border-left: solid 1px lightgray;
+	margin: 0 10px 10px 0;
+}
+
+.articleblock li a {
+	display: block;
+	height: 100%;
+	width: 200px;
+	padding: 0;
+	font-size: 18px;
+	color: black;
+}
+
+.article h3 {
+	margin: 0;
+	padding: 10px;
+	font-family: schoolbook-web-condensed,Georgia;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+.article p {
+	margin: 0;
+	padding: 0 10px;
+	font-size: 60%;
+	line-height: 140%;
+	color:#555;
+}
+
+.article {
+	overflow: hidden;  
+    text-overflow: ellipsis;
+}
+
+@media all and (min-width: 1147px) {
+
+	.articleblock li:nth-child(1) {
+		height: 260px;
+		width: 411px;
+	}
+
+	.articleblock li:nth-child(1) a {
+		width: 100%;
+		font-size: 30px;
+	}
+	
+}
+
+@media all and (max-width: 450px) {
+
+	.articleblock .article {
+		width: 100%;
+		border: 0;
+	}
+	
+	.articleblock .article a {
+		width: 90%;
+	}
+	
+	.articleblock .article:nth-child(n+4) {
+		display: none;
+	}
+	
+	li {
+		height: auto !important;
+	}
+	
+	h2 {
+		padding: 0 !important;
+		margin: 5px 0 !important;
+	}
+	
+	#mainhead {
+		position:relative;
+	}
+
+}
+
+.backgrounded {
+	background-size:cover;
+}
+
+.articleblock .backgrounded a {
+	color: white;
+}
+
+.articleblock .backgrounded a  h3{
+	background: rgba(50,50,50,.6);
+}
+
+.articleblock .backgrounded a:hover {
+	color: white;
+	background: rgba(100,100,100,.3);
+	text-shadow: 0 0 10px darkblue;
+}
+
+.articleblock .backgrounded a:hover h3{
+	background: rgba(50,50,50,1);
+}
+
+.articleblock li:hover {
+	background: rgb(245,245,245);
+	border-left: solid 1px darkblue;
+	box-shadow: 0 0 15px lightgray inset;
+}
+
+.articleblock li a:hover {
+	color: darkblue;
+	text-decoration: none;
+}
+
+
+/*
+//
+//
+// ARTICLE PAGE
+//
+//
+*/
+
+article header p {
+	line-height: 10px;
+}
+
+article header {
+	margin: 0 0 25px 0;
+}
+
+.articletitle {
+	font-family: schoolbook-web-condensed,Georgia;
+	font-size: 36pt;
+}
+
+.articlesubtitle {
+	font-family:myriad-pro-condensed,helvetica,arial;
+	font-weight:normal;
+	font-size:22pt;
+	margin-top:10px;
+}
+
+.articleauthor {
+	font-family:myriad-pro-condensed,helvetica,arial;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-bottom:6px;
+}
+
+.articleauthorjob {
+	font-family:myriad-pro-condensed,helvetica,arial;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+.articledate {
+	font-family:myriad-pro-condensed,helvetica,arial;
+}
+
+.articlebody {
+	margin-left: 80px;
+}
+
+.articlebody h3 {
+	font-variant: small-caps;
+	margin-left: -25px;
+}
+
+figure {
+	width: 500px;
+	float:right;
+	margin: 0 -280px 25px 25px;
+}
+
+figure p {
+	margin: 0;
+	padding: 0;
+	line-height: 16px;
+	font-family:myriad-pro-condensed,helvetica,arial;
+}
+
+.photocredit {
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+	color: white;
+	margin: -20px 5px 0 0;
+	text-shadow: 0 0 10px black;
+}
+
+.photocaption {
+	font-size: 14px;
+	margin: 5px 0 0 0;
+}
+
+.lede {
+	/*font-variant: small-caps;*/
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+aside {
+	width: 320px;
+	float:right;
+	margin: 25px -100px 25px 25px;
+}
+
+.pullquote .quote {
+	font-size: 20px;
+}
+
+.pullquote .attribution {
+	font-style: italic;
+	font-size: 16px;
+}

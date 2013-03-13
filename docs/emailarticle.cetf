@@ -1,0 +1,34 @@
+From: [required_from]
+To: [required_to]
+Bcc: orientweb@bowdoin.edu
+Subject: Bowdoin Orient Article: [articletitle]
+
+[required_sendername] ([required_from]) has sent
+you an article from The Bowdoin Orient.
+
+Message from sender:
+"[message]"
+
+--------------------------------------------------
+
+[articletype]
+[articletitle]
+[articledate]
+
+[articleauthor]
+[articlejob]
+
+[articlepullquote]
+
+Link to full article:
+
+http://orient.bowdoin.edu/orient/article.php?date=[date]&section=[section]&id=[id]
+
+
+--------------------------------------------------
+The Bowdoin Orient is a weekly newspaper published
+by the students of Bowdoin College.
+
+Visit our website: http://orient.bowdoin.edu
+--------------------------------------------------
+Copyright 2006 The Bowdoin Orient

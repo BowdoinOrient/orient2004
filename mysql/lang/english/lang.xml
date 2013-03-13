@@ -1,0 +1,7 @@
+<xml>
+	<name>English</name>
+	<author>Anthony Frizalone</author>
+	<mqa_version>1.4</mqa_version>
+	<charset>iso-8859-1</charset>
+	<description>This is the default language file for MQA.</description>
+</xml>

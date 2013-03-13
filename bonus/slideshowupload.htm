@@ -1,0 +1,71 @@
+<?php
+
+# Get next Friday's date.  
+$sqlQuery = "SELECT DATE_FORMAT(DATE_ADD(NOW(), INTERVAL ID DAY), '%Y-%m-%d') AS DATE FROM `days` WHERE DATE_FORMAT(DATE_ADD(NOW(), INTERVAL ID DAY), '%W') ='Friday' LIMIT 0, 30"; 
+
+# Connect to DB.
+mysql_connect("teddy","orientdba","0r1en!") or die(mysql_error() );
+mysql_select_db ("DB01Orient");
+
+
+$result = mysql_query ($sqlQuery);
+if ($row = mysql_fetch_array($result)) {
+	$nextfriday = $row["DATE"];
+}
+else {
+	$nextfriday = "2000-01-01";
+}
+
+
+?>
+<HTML>
+<HEAD>
+<TITLE>BONUS</TITLE>
+<link href="orient.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY>
+<p><a href="index.php"><img src="logo.jpg" border="0"></a></p>
+
+<table bgcolor="CCCCCC" cellpadding="1" width="100%"><tr><td>
+<font class="textbold">&nbsp;Add a slideshow</font><tr><td></table>
+
+<FORM method="POST" action="slideshowform.php">
+  <table rows=2 cols=2 cellspacing=0 cellpadding=5>
+    <tr> 
+      <td valign="top"> <table cols=2 cellspacing=0 cellpadding=2>
+           <tr> 
+            <td> Issue Date: </td>
+            <td>
+
+		<SELECT name="date">
+         	<?php 
+		$sqlQuery = "select issue_date from issue";
+		$res = mysql_query ($sqlQuery);
+		while ($row = mysql_fetch_array($res)) {
+		$issueDate2 = $row["issue_date"];
+		?>
+         	 <OPTION 
+		<?php if ($issueDate2 == $nextfriday) { ?>
+		selected
+		<?php } ?>
+
+		value="<?php echo $issueDate2 ?>"><?php echo $issueDate2 ?></OPTION>
+
+
+          	<?php
+		}
+		?>
+		</SELECT>
+
+		</td>
+          </tr>
+	  <tr> 
+            <td> Slideshow Name: </td>
+            <td> <INPUT type="text" name="name" size="60"> </td>
+          </tr>
+
+  </table>
+<p><input type="submit" name="preview" value="Add Slideshow"></p>
+</FORM>
+</BODY>
+</HTML>

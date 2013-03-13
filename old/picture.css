@@ -1,0 +1,69 @@
+/* CSS Document */
+
+body {
+	background: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 2;
+}
+
+.closewindow {
+	font-size: 12px;
+	color: #003366;
+	text-decoration: none;
+}
+
+.photodate {
+	font-size: 9px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.picturenav {
+	font-size: 12px;
+	font-weight: bold;
+	color: #003366;
+	text-decoration: none;
+}
+
+.photocaption {
+	font-size: 9px;
+	color: #666666;
+	text-decoration: none;
+}
+
+.photocredit {
+	font-size: 9px;
+	color: #000000;
+	text-transform:uppercase;
+}
+
+a.closewindow, a.closewindow:visit, a.closewindow:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.closewindow:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+	
+a.photocredit, a.photocredit:visit, a.photocredit:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.photocredit:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+	
+a.picturenav, a.picturenav:visit, a.picturenav:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.picturenav:hover {
+	color: #003366;
+	text-decoration: underline;
+}

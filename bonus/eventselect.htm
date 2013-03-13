@@ -1,0 +1,151 @@
+<?php
+
+
+# Connect to DB.
+mysql_connect("teddy","orientdba","0r1en!") or die(mysql_error() );
+mysql_select_db ("DB01Orient");
+
+
+
+
+
+?>
+<HTML>
+<HEAD>
+<TITLE>BONUS</TITLE>
+<link href="orient.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY>
+<p><a href="index.php"><img src="logo.jpg" border="0"></a></p>
+
+<table bgcolor="CCCCCC" cellpadding="1" width="100%"><tr><td>
+<font class="textbold">&nbsp;Search events to edit</font><tr><td></table>
+
+<FORM method="POST" action="eventquery.php">
+<table rows=2 cols=2 cellspacing=0 cellpadding=5>
+<tr>
+<td valign="top">
+	<table cols=2 cellspacing=0 cellpadding=2>
+	<tr>
+	<td>
+		Issue Date:
+	</td>
+	<td>
+
+<SELECT name="issuedate">
+<OPTION value=""></OPTION>
+          <?php 
+
+$sqlQuery = "select issue_date from issue";
+
+$res = mysql_query ($sqlQuery);
+
+while ($row = mysql_fetch_array($res)) {
+	$issueDate = $row["issue_date"];
+?>
+          <OPTION value="<?php echo $issueDate ?>"><?php echo $issueDate ?></OPTION>
+          <?php
+}
+?>
+
+</SELECT>
+
+	</td>
+	</tr>
+	<tr>
+	<td>
+		Event Date:
+	</td>
+	<td>
+		<SELECT name="eventdate">
+<OPTION value=""></OPTION>
+<?php 
+
+$sqlQuery2 = "select date from daydate order by date";
+
+$res2 = mysql_query ($sqlQuery2);
+
+while ($row2 = mysql_fetch_array($res2)) {
+	$eventDate = $row2["date"];
+
+?>
+		<OPTION value="<?php echo $eventDate ?>"><?php echo $eventDate ?></OPTION>
+<?php
+}
+?>
+		</SELECT>
+</tr>
+
+	<tr>
+	<td>
+		Priority:
+	</td>
+	<td>
+		<SELECT name="priority">
+		<OPTION value=""></OPTION>
+		<OPTION value="1">1</OPTION>
+		<OPTION value="2">2</OPTION>
+		<OPTION value="3">3</OPTION>
+		<OPTION value="4">4</OPTION>
+		<OPTION value="5">5</OPTION>
+		<OPTION value="6">6</OPTION>
+		<OPTION value="7">7</OPTION>
+		<OPTION value="8">8</OPTION>
+		<OPTION value="9">9</OPTION>
+		<OPTION value="10">10</OPTION>
+		<OPTION value="11">11</OPTION>
+		<OPTION value="12">12</OPTION>
+		<OPTION value="13">13</OPTION>
+		<OPTION value="14">14</OPTION>
+		<OPTION value="15">15</OPTION>
+		<OPTION value="16">16</OPTION>
+		<OPTION value="17">17</OPTION>
+		<OPTION value="18">18</OPTION>
+
+		</SELECT>
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+		Title:
+	</td>
+	<td>
+		<INPUT type="text" name="title" size="60" value="">
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+		Description:
+	</td>
+	<td>
+		<INPUT type="text" name="description" size="60" value="">
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+		Time/Place:
+	</td>
+	<td>
+		<INPUT type="text" name="timeplace" size="60" value="">
+	</td>
+	</tr>
+
+
+	</table>
+</td>
+<td valign="top">
+
+</td>
+</tr>
+<tr>
+<td colspan = 2>
+<INPUT type="submit" name="preview" value="Search Events">
+</td>
+</tr>
+</table>
+</FORM>
+</BODY>
+</HTML>

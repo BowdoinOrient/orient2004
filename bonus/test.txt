@@ -1,0 +1,21 @@
+        		article.DATE LIKE '%$date' and
+        		article.SECTION_ID LIKE '%$section' and
+        		article.PRIORITY LIKE '%$priority' and
+
+
+
+
+        		article.TITLE LIKE '%$title%' and
+        		article.SUBHEAD LIKE '%$subhead%' and
+        		article.TEXT LIKE '%$text%' and
+        		article.PULLQUOTE LIKE '%$pullquote%' and
+
+        		article.TYPE LIKE '%$type'
+
+
+
+        		article.AUTHOR1 LIKE '%$author1' and
+        		article.AUTHOR3 LIKE '%$author3' and
+        		article.AUTHOR2 LIKE '%$author2' and
+        		article.AUTHOR_JOB LIKE '%$job' and
+        		article.SERIES LIKE '%$series' and

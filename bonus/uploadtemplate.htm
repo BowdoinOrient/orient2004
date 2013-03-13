@@ -1,0 +1,293 @@
+<?php
+
+# to do - make queries to get list of all authors, sections, jobs, series, and types and display them as drop down boxes.  
+
+
+
+
+# Get next Friday's date.  
+$sqlQuery = "SELECT DATE_FORMAT(DATE_ADD(NOW(), INTERVAL ID DAY), '%Y-%m-%d') AS DATE FROM `days` WHERE DATE_FORMAT(DATE_ADD(NOW(), INTERVAL ID DAY), '%W') ='Friday' LIMIT 0, 30"; 
+
+
+
+
+
+
+# Connect to DB.
+mysql_connect("teddy","orientdba","0r1en!") or die(mysql_error() );
+mysql_select_db ("DB01Orient");
+
+
+$result = mysql_query ($sqlQuery);
+if ($row = mysql_fetch_array($result)) {
+	$nextfriday = $row["DATE"];
+}
+else {
+	$nextfriday = "2000-01-01";
+}
+
+
+
+?>
+<HTML>
+<HEAD>
+<TITLE>BONUS</TITLE>
+<link href="orient.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY>
+<p><a href="index.php"><img src="logo.jpg" border="0"></a></p>
+
+<table bgcolor="CCCCCC" cellpadding="1" width="100%"><tr><td>
+<font class="textbold">&nbsp;Add an article</font><tr><td></table>
+
+<FORM method="POST" action="uploadform.php">
+<table rows=2 cols=2 cellspacing=0 cellpadding=5>
+<tr>
+<td valign="top">
+	<table cols=2 cellspacing=0 cellpadding=2>
+	<tr>
+	<td>
+		Date:
+	</td>
+	<td>
+		<?php
+		echo "<INPUT type=\"text\" name=\"date\" size=\"20\" value=\"$nextfriday\">";
+		?>
+	</td>
+	</tr>
+	<tr>
+	<td>
+		Section:
+	</td>
+	<td>
+		<SELECT name="section">
+<?php 
+
+$sqlQuery = "select id, name from section where id > 0 and id < 6 order by order_flag";
+
+$res = mysql_query ($sqlQuery);
+
+while ($row = mysql_fetch_array($res)) {
+	$sectionID = $row["id"];
+	$sectionName = $row["name"];
+
+?>
+		<OPTION value="<?php echo $sectionID ?>"><?php echo $sectionName ?></OPTION>
+<?php
+}
+?>
+		</SELECT>
+	</td>
+	</tr>
+	<tr>
+	<td>
+		Priority:
+	</td>
+	<td>
+		<SELECT name="priority">
+		<OPTION value="1">1</OPTION>
+		<OPTION value="2">2</OPTION>
+		<OPTION value="3">3</OPTION>
+		<OPTION value="4">4</OPTION>
+		<OPTION value="5">5</OPTION>
+		<OPTION value="6">6</OPTION>
+		<OPTION value="7">7</OPTION>
+		<OPTION value="8">8</OPTION>
+		<OPTION value="9">9</OPTION>
+		<OPTION value="10">10</OPTION>
+		<OPTION value="11">11</OPTION>
+		<OPTION value="12">12</OPTION>
+		<OPTION value="13">13</OPTION>
+		<OPTION value="14">14</OPTION>
+		<OPTION value="15">15</OPTION>
+		<OPTION value="16">16</OPTION>
+		<OPTION value="17">17</OPTION>
+		<OPTION value="18">18</OPTION>
+
+		</SELECT>
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+		Headline:
+	</td>
+	<td>
+		<INPUT type="text" name="title" size="60">
+	</td>
+	</tr>
+	<tr>
+	<td>
+		Subhead:
+	</td>
+	<td>
+		<INPUT type="text" name="subhead" size="60">
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+		Author(s):
+	</td>
+	<td>
+		<SELECT name="author1">
+<?php 
+
+$sqlQuery = "select id, name from author where id > 0 order by name";
+
+$res = mysql_query ($sqlQuery);
+
+while ($row = mysql_fetch_array($res)) {
+	$authorID = $row["id"];
+	$authorName = $row["name"];
+
+?>
+		<OPTION value="<?php echo $authorID ?>"><?php echo $authorName ?></OPTION>
+<?php
+}
+?>
+		</SELECT>
+
+	<SELECT name="author2">
+<?php 
+
+$sqlQuery = "select id, name from author where id > 0 order by name";
+
+$res = mysql_query ($sqlQuery);
+
+while ($row = mysql_fetch_array($res)) {
+	$authorID = $row["id"];
+	$authorName = $row["name"];
+
+?>
+		<OPTION value="<?php echo $authorID ?>"><?php echo $authorName ?></OPTION>
+<?php
+}
+?>
+		</SELECT>
+
+		<SELECT name="author3">
+<?php 
+
+$sqlQuery = "select id, name from author where id > 0 order by name";
+
+$res = mysql_query ($sqlQuery);
+
+while ($row = mysql_fetch_array($res)) {
+	$authorID = $row["id"];
+	$authorName = $row["name"];
+
+?>
+		<OPTION value="<?php echo $authorID ?>"><?php echo $authorName ?></OPTION>
+<?php
+}
+?>
+		</SELECT>
+
+	</td>
+	</tr>
+	<tr>
+	<td>
+		Author Job:
+	</td>
+	<td>
+		<SELECT name="job">
+<?php 
+
+$sqlQuery = "select id, name from job order by name";
+
+$res = mysql_query ($sqlQuery);
+
+while ($row = mysql_fetch_array($res)) {
+	$jobID = $row["id"];
+	$jobName = $row["name"];
+
+?>
+		<OPTION value="<?php echo $jobID ?>"><?php echo $jobName ?></OPTION>
+<?php 
+}
+?>
+		</SELECT>
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+		Series:
+	</td>
+	<td>
+		<SELECT name="series">
+<?php 
+
+$sqlQuery = "select id, name from series order by name";
+
+$res = mysql_query ($sqlQuery);
+
+while ($row = mysql_fetch_array($res)) {
+	$seriesID = $row["id"];
+	$seriesName = $row["name"];
+
+?>
+		<OPTION value="<?php echo $seriesID ?>"><?php echo $seriesName ?></OPTION>
+<?php 
+}
+?>
+		</SELECT>
+	</td>
+	</tr>	
+<tr>
+	<td>
+		Article Type:
+	</td>
+	<td>
+		<SELECT name="type">
+<?php 
+
+$sqlQuery = "select id, name from articletype order by name";
+
+$res = mysql_query ($sqlQuery);
+
+while ($row = mysql_fetch_array($res)) {
+	$typeID = $row["id"];
+	$typeName = $row["name"];
+
+?>
+		<OPTION value="<?php echo $typeID ?>"><?php echo $typeName ?></OPTION>
+<?php 
+}
+?>
+		</SELECT>&nbsp;(Leave blank if a regular article.)
+	</td>
+	</tr>
+
+	<tr>
+	<td valign="top">
+		Article text:
+	</td>
+	<td>
+		<TEXTAREA name="text" rows="10" cols="80" wrap="soft">VBText</TEXTAREA>
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+		Pull Quote:
+	</td>
+	<td>
+		<TEXTAREA name="pullquote" rows="4" cols="60" wrap="soft">VBPullQuote</TEXTAREA>
+	</td>
+	</tr>
+	</table>
+</td>
+<td valign="top">
+
+</td>
+</tr>
+<tr>
+<td colspan = 2>
+<INPUT type="submit" name="preview" value="Add Article">
+</td>
+</tr>
+</table>
+</FORM>
+</BODY>
+</HTML>

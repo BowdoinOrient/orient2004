@@ -1,0 +1,766 @@
+/* CSS Document */
+
+body {
+	background: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+img.thumb {
+	border-color: #003366;
+	border-width: 1px;
+}
+
+p { 
+	font-family: Verdana, sans-serif, Arial, Helvetica
+}
+
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+td.index {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.articletype {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.articleseriesmore {
+	font-size: 13px;
+	font-weight: bold;
+	color: #003366;
+	text-decoration: none;
+}
+
+a.articleseriesmore, a.articleseriesmore:visit, a.articleseriesmore:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.articleseriesmore:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+.homeheadline {
+	font-size: 16px;
+	font-weight: bold;
+	color: #003366;
+	text-decoration: none;
+}
+
+.homeheadlineseries {
+	font-size: 16px;
+	font-weight: bold;
+	color: #003366;
+	text-decoration: none;
+	font-style: italic; 
+}
+
+.homeelipse {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.smallheadline {
+	font-size: 14px;
+	font-weight: bold;
+	color: #003366;
+	text-decoration: none;
+}
+
+.homefeaturehead {
+	font-size: 14px;
+	font-weight: bold;
+	color: #003366;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.homeauthor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+    text-transform:uppercase; 
+	text-decoration: none;
+}
+
+.staffpagetitles {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+    text-transform:uppercase; 
+	text-decoration: none;
+}
+
+.homemoreheadlines {
+	font-size: 12px;
+	color: #003366;
+	text-decoration: none;
+}
+
+.hometype {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.homesection {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.hometext {
+	font-size: 13px;
+	color: #OOOOOO;
+	text-decoration: none;
+}
+
+.copyright {
+	font-size: 9px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.terms {
+	font-size: 9px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.text {
+	font-size: 13px;
+	color: #OOOOOO;
+	text-decoration: none;
+}
+
+.smalltext {
+	font-size: 9px;
+	color: #OOOOOO;
+	text-decoration: none;
+}
+
+.smalltextbold {
+	font-size: 9px;
+	font-weight: bold;
+	color: #OOOOOO;
+	text-decoration: none;
+}
+
+.textgrey {
+	font-size: 13px;
+	color: #999999;
+	text-decoration: none;
+}
+
+.textbold {
+	font-size: 13px;
+	color: #OOOOOO;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.sound {
+	font-size: 13px;
+	color: #OOOOOO;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.textboldwhite {
+	font-size: 13px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.headertext {
+	font-size: 9px;
+	color: #OOOOOO;
+	text-decoration: none;
+}
+
+.tochead {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.tocitem {
+	font-size: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.link {
+	font-size: 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.search {
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.photocaption {
+	font-size: 9px;
+	color: #666666;
+	text-decoration: none;
+}
+
+.photocredit {
+	font-size: 9px;
+	color: #000000;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.smalltextblue {
+	font-size: 9px;
+	color: #003366;
+	text-decoration: none;
+}
+
+.photoenlarge {
+	font-size: 9px;
+	color: #003366;
+	text-decoration: none;
+}
+
+.photorelated {
+	font-size: 9px;
+	color: #003366;
+	text-decoration: none;
+}
+
+.morehead {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.moredot {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.more {
+	font-size: 13px;
+	color: #003366;
+	text-decoration: none;
+}
+
+.moreseries {
+	font-size: 13px;
+	color: #003366;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic; 
+}
+
+.moretype {
+	font-size: 13px;
+	color: #003366;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.sectiontitle {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.pagetitle {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+
+.articleheadline {
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.articlesubhead {
+	font-size: 13px;
+	color: #666666;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic; 
+}
+
+.articlesubheadregular {
+	font-size: 13px;
+	color: #666666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.articleauthor {
+	font-size: 13px;
+	color: #000000;
+}
+
+.articleauthorbold {
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.articleauthorjob {
+	font-size: 10px;
+	color: #000000;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.articledate {
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none;
+}
+
+.articlealsosection {
+	font-size: 10px;
+	color: #003366;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.articlealsolink {
+	font-size: 10px;
+	color: #003366;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.articlealsoheadline {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.articlealsotext {
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none;
+}
+
+.articlealsotexteditorial {
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.articleoptionstitle {
+	font-size: 10px;
+	color: #003366;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+.articleoptionsitem {
+	font-size: 10px;
+	color: #003366;
+	text-decoration: none;
+}
+
+.articleoptionsdot {
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.articlealsoinsectiontitle {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.articlealsoinsectiondot {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.articlealsoinsectionheadline {
+	font-size: 13px;
+	color: #003366;
+	text-decoration: none;
+}
+
+.authorpagetext {
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.authorpageauthortitle {
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a, a:visit {
+	color: #000099;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #000099;
+	text-decoration: underline;
+}
+
+a.search, a.search:visit, a.search:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.search:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a.tocitem, a.tocitem:visit, a.tocitem:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.tocitem:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a.link, a.link:visit, a.link:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.link:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a.sound, a.sound:visit, a.sound:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.sound:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.homeheadline, a.homeheadline:visit, a.homeheadline:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.homeheadline:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.smallheadline, a.smallheadline:visit, a.smallheadline:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.smallheadline:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.more, a.more:visit, a.more:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.more:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.terms, a.terms:visit, a.terms:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.terms:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+a.copyright, a.copyright:visit, a.copyright:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.copyright:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+a.photoenlarge, a.photoenlarge:visit, a.photoenlarge:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.photoenlarge:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.articleoptionsitem, a.articleoptionsitem:visit, a.articleoptionsitem:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.articleoptionsitem:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.photorelated, a.photorelated:visit, a.photorelated:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.photorelated:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.homesection, a.homesection:visit, a.homesection:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.homesection:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+a.morehead, a.morehead:visit, a.morehead:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.morehead:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+a.articleauthor, a.articleauthor:visit, a.articleauthor:active, a.articleauthor:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.articlealsosection, a.articlealsosection:visit, a.articlealsosection:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.articlealsosection:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.articlealsoheadline, a.articlealsoheadline:visit, a.articlealsoheadline:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.articlealsoheadline:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+a.articlealsolink, a.articlealsolink:visit, a.articlealsolink:active, a.articlealsolink:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.articlealsoinsectionheadline, a.articlealsoinsectionheadline:visit, a.articlealsoinsectionheadline:active {
+	color: #003366;
+	text-decoration: none;
+}
+
+a.articlealsoinsectionheadline:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+
+a.articlealsoinsectiontitle, a.articlealsoinsectiontitle:visit, a.articlealsoinsectiontitle:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.articlealsoinsectiontitle:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+	
+a.photocredit, a.photocredit:visit, a.photocredit:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.photocredit:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+a.homeelipse, a.homeelipse:visit, a.homeelipse:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.homeelipse:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+/* scoreboard */
+
+table.stats {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	width: 310px;
+	background-color: #f2f2eb;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+table.stats td.hed {
+	background-color: #CCCCCC;
+	color: #FFFFFF;
+	padding: 0px;
+	padding-left: 3px;
+	letter-spacing: 0px;
+	text-align: left;
+	border-bottom: 2px #CCCCCC solid;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.scorecells {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	background-color: #f2f2eb;
+	color: #404040;
+	padding: 2px;
+	text-align: left;
+	border: 1px #CCCCCC solid;
+}
+
+table.stats td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	background-color: #f2f2eb;
+	color: #404040;
+	padding: 2px;
+	text-align: left;
+	border: 1px #CCCCCC solid;
+}
+
+td.normal {
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 12px;
+	color: #404040;
+	line-height: 14px;
+	text-decoration: strike;
+}
+
+a.scoreboardlink, a.scoreboardlink:visit, a.scoreboardlink:active {
+	color: #404040;
+	text-decoration: none;
+}
+
+a.scoreboardlink:hover {
+	color: #404040;
+	text-decoration: underline;
+}
+
+
+
+/* browser upgrade */
+
+.browser {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.browserred {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: red;
+    text-transform:uppercase; 
+	text-decoration: none;
+}
+
+/* notice */
+
+.notetitle {
+	font-size: 18px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.notetext {
+	font-size: 13px;
+	color: #OOOOOO;
+	text-decoration: none;
+}
